@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-15T00:36:25.759Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.llemonade.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "return no foto in the future date",
+        "description": "",
+        "id": "apitest-1;return-no-foto-in-the-future-date",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.llemonade.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user enter a future date as earth_date and send a get request",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.APIstepdefinitions.the_user_enter_a_future_date_as_earth_date()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "the status code should be \"200\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "the result shouldn\u0027t have a foto id",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Apitest 1",
+    "description": "",
+    "id": "apitest-1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ApinoFotoFutureDate.feature",
+    "tags": []
+  }
+]
