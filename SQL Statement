@@ -1,0 +1,6 @@
+SQL Statement
+I used SQL developer not Postgresql
+
+select max(unit_price) 
+from products
+group by supplier_id;
