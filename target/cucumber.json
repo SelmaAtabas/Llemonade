@@ -3,25 +3,47 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-15T00:36:25.759Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4267352500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is in the wikipedia home page",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_is_in_the_wikipedia_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T15:10:13.797Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 2852710700,
+              "status": "passed"
             },
             "match": {
               "location": "com.llemonade.stepdefinitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 3,
-        "name": "return no foto in the future date",
+        "line": 6,
+        "name": "Search button",
         "description": "",
-        "id": "apitest-1;return-no-foto-in-the-future-date",
+        "id": "searching;search-button",
         "after": [
           {
             "result": {
-              "status": "skipped"
+              "status": "passed"
             },
             "match": {
               "location": "com.llemonade.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -33,32 +55,50 @@
         "steps": [
           {
             "result": {
-              "duration": 997300,
-              "status": "skipped"
+              "duration": 131836600,
+              "status": "passed"
             },
-            "line": 4,
-            "name": "the user enter a future date as earth_date and send a get request",
+            "line": 7,
+            "name": "the user enter following \"Document\"",
             "match": {
-              "location": "com.llemonade.stepdefinitions.APIstepdefinitions.the_user_enter_a_future_date_as_earth_date()"
+              "arguments": [
+                {
+                  "val": "\"Document\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.llemonade.stepdefinitions.Searchstepdefinitions.the_user_enter_following(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 988290200,
+              "status": "passed"
             },
-            "line": 5,
-            "name": "the status code should be \"200\"",
-            "match": {},
-            "keyword": "Then "
+            "line": 8,
+            "name": "the user click search button",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.Searchstepdefinitions.the_user_click_search_button()"
+            },
+            "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 31599700,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "the result shouldn\u0027t have a foto id",
-            "match": {},
+            "line": 9,
+            "name": "the title should be contain \"Document\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Document\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.llemonade.stepdefinitions.Searchstepdefinitions.the_title_should_be_contain(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -69,11 +109,297 @@
         ]
       }
     ],
-    "name": "Apitest 1",
+    "name": "Searching",
     "description": "",
-    "id": "apitest-1",
+    "id": "searching",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ApinoFotoFutureDate.feature",
+    "uri": "file:src/test/resources/features/Search.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-23T15:10:22.129Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9868000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.llemonade.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Change Language",
+        "description": "",
+        "id": "language;change-language",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.llemonade.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 358917600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is in the wikipedia home page",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_is_in_the_wikipedia_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1082344100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user select Espanol",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.changelanguagestepdefinitions.the_user_select()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67636500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "language should be changed as \"español\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"español\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.llemonade.stepdefinitions.changelanguagestepdefinitions.language_should_be_changed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Language",
+    "description": "",
+    "id": "language",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/changelanguage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-23T15:10:23.670Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.llemonade.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Check contents",
+        "description": "",
+        "id": "content;check-contents",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.llemonade.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 364848300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is in the wikipedia home page",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_is_in_the_wikipedia_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 609844200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks Contents",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_clicks_Contents()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 479929900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user should be able to see following options",
+            "match": {
+              "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_should_be_able_to_see_following_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Contents"
+                ]
+              },
+              {
+                "cells": [
+                  "Overviews"
+                ]
+              },
+              {
+                "cells": [
+                  "Outlines"
+                ]
+              },
+              {
+                "cells": [
+                  "Lists"
+                ]
+              },
+              {
+                "cells": [
+                  "Portals"
+                ]
+              },
+              {
+                "cells": [
+                  "A–Z index"
+                ]
+              },
+              {
+                "cells": [
+                  "Glossaries"
+                ]
+              },
+              {
+                "cells": [
+                  "Categories"
+                ]
+              },
+              {
+                "cells": [
+                  "Indices"
+                ]
+              },
+              {
+                "cells": [
+                  "Reference"
+                ]
+              },
+              {
+                "cells": [
+                  "Culture"
+                ]
+              },
+              {
+                "cells": [
+                  "Geography"
+                ]
+              },
+              {
+                "cells": [
+                  "Health"
+                ]
+              },
+              {
+                "cells": [
+                  "History"
+                ]
+              },
+              {
+                "cells": [
+                  "Human activities"
+                ]
+              },
+              {
+                "cells": [
+                  "Mathematics"
+                ]
+              },
+              {
+                "cells": [
+                  "Nature"
+                ]
+              },
+              {
+                "cells": [
+                  "People"
+                ]
+              },
+              {
+                "cells": [
+                  "Philosophy"
+                ]
+              },
+              {
+                "cells": [
+                  "Religion"
+                ]
+              },
+              {
+                "cells": [
+                  "Society"
+                ]
+              },
+              {
+                "cells": [
+                  "Technology"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Content",
+    "description": "",
+    "id": "content",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/contents.feature",
     "tags": []
   }
 ]
