@@ -1,6 +1,6 @@
 Feature:Content
 
-
+@wip
 Scenario: Check contents
     Given the user is in the wikipedia home page
     When the user clicks Contents

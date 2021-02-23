@@ -1,11 +1,78 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ApinoFotoFutureDate.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Search.feature");
 formatter.feature({
-  "name": "Apitest 1",
+  "name": "Searching",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is in the wikipedia home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_is_in_the_wikipedia_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search button",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user enter following \"Document\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.Searchstepdefinitions.the_user_enter_following(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click search button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.Searchstepdefinitions.the_user_click_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the title should be contain \"Document\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.Searchstepdefinitions.the_title_should_be_contain(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/changelanguage.feature");
+formatter.feature({
+  "name": "Language",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "return no foto in the future date",
+  "name": "Change Language",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -15,35 +82,115 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user enter a future date as earth_date and send a get request",
+  "name": "the user is in the wikipedia home page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.llemonade.stepdefinitions.APIstepdefinitions.the_user_enter_a_future_date_as_earth_date()"
+  "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_is_in_the_wikipedia_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the status code should be \"200\"",
-  "keyword": "Then "
+  "name": "the user select Espanol",
+  "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.changelanguagestepdefinitions.the_user_select()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the result shouldn\u0027t have a foto id",
+  "name": "language should be changed as \"español\"",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.changelanguagestepdefinitions.language_should_be_changed(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/contents.feature");
+formatter.feature({
+  "name": "Content",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Check contents",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is in the wikipedia home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_is_in_the_wikipedia_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks Contents",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_clicks_Contents()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should be able to see following options",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.llemonade.stepdefinitions.contentsstepdefinitions.the_user_should_be_able_to_see_following_options(java.util.List\u003cjava.lang.String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 });
